@@ -36,7 +36,19 @@ function divisionesSlider(divisiones){
  */
 $(document).ready(function() {
    var divisiones=13;
-  
+$("#btnSumar").click(function(){
+    alert("hello");
+    var valor = $("#myRange").val();
+    valor++;
+    $("#myRange").attr("value",valor);
+});
+
+$("#btnRestar").click(function(){
+    alert("Restamos");
+    var valor = $("#myRange").val();
+    valor--;
+    $("#myRange").attr("value",valor);
+});
 
 });
 
@@ -75,4 +87,19 @@ $(function() {
     })
     // Fake a change to position bubble at page load
     .trigger('change');
-   });
+
+
+    
+    
+
+
+
+
+
+
+
+
+});
+
+
+

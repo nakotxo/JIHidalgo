@@ -4,10 +4,6 @@
  * https://www.w3schools.com/howto/howto_js_rangeslider.asp
  * https://css-tricks.com/value-bubbles-for-range-inputs/
  */
-
-function hello(){
-    alert("Hello Kitty");
-}
 function divisionesSlider(divisiones){
     var anchoSlider = $("#myRange").width();
     var espacioSlider = anchoSlider/(divisiones-1);
@@ -26,29 +22,24 @@ function divisionesSlider(divisiones){
     }
 
 }
-
-
-
-
-
 /**
  * al cargar la pagina
  */
 $(document).ready(function() {
-   var divisiones=13;
-$("#btnSumar").click(function(){
+    var divisiones=13;
+    $("#btnSumar").click(function(){
     alert("hello");
     var valor = $("#myRange").val();
     valor++;
     $("#myRange").attr("value",valor);
-});
+    });
 
-$("#btnRestar").click(function(){
-    alert("Restamos");
-    var valor = $("#myRange").val();
-    valor--;
-    $("#myRange").attr("value",valor);
-});
+    $("#btnRestar").click(function(){
+        alert("Restamos");
+        var valor = $("#myRange").val();
+        valor--;
+        $("#myRange").attr("value",valor);
+    });
 
 });
 
@@ -87,19 +78,4 @@ $(function() {
     })
     // Fake a change to position bubble at page load
     .trigger('change');
-
-
-    
-    
-
-
-
-
-
-
-
-
 });
-
-
-
